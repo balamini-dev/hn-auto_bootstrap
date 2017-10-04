@@ -17,8 +17,9 @@ title{
     color: #487ab9;
 }
 
-nav{
-  position: fixed;
+
+.navbar-phone{
+  color: #fff;
 }
 
 @media (min-width: 768px){
@@ -41,8 +42,8 @@ nav{
   font-family: ;
   font-size: 30px;
   text-align: center;
-  width: 108%
-  font-size: 0px;
+  width: 100%;
+  font-size: 30px;
   /**line-height: 45px;**/
   font-family: 'Roboto', sans-serif;
   margin-bottom: auto;
@@ -51,7 +52,7 @@ nav{
 .sous_text1{
     padding: 4px 0px;
     display: inline;
-    position: relative;
+    
     left: 10px;
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     box-shadow: 10px 0 0 rgba(0, 0, 0, 0.5), -10px 0 0 rgba(0, 0, 0, 0.5);
@@ -118,11 +119,10 @@ nav{
   padding: 5px 20px;
 }
 
-#section4{
+.section4{
   width:100%;
-  height: 480px;
+  height: 550px;
   background-size: cover;
-  background-image: url("laptop.jpeg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,14 +160,13 @@ nav{
 .conteneur_form2{
   /**background-color: blue;**/
   width: 75%;
-  height: 200px;
+  height: 160px;
 }
 
 #form1{
   width: 100%;
   border-radius: 4px;
   padding: 10px 10px;
-  
 }
 
 #form2{
@@ -199,6 +198,7 @@ nav{
 .text_footer{
   color: #fff;
   font-family: 'Mukta Malar', sans-serif;
+  margin-top: 8px;
 }
 
 footer{
@@ -212,7 +212,11 @@ footer{
 
 @media screen and (max-width: 978px)
 {
-  
+  .section2{
+    display: flex;
+    flex-direction: column;
+    height: 730px;
+  }
   .text1{
     font-size: 25px;
   }
@@ -228,13 +232,11 @@ footer{
   .sous_conteneur_form1{
     width: 100%;
   }
-
   .sous_section4{
     display: flex;
     flex-direction: column;
     height: 300px;
   }
-
   .conteneur_form1{
     height: 150px;
     margin-bottom: 15px;
@@ -249,21 +251,26 @@ footer{
     margin-bottom: 10px;
   }
 
-  #section4{
+  .section4{
     height: 600px;
   }
+  .navbar-brand{
+    font-size: 22px;
+  }
+}
 
+@media screen and (max-width: 900px)
+{
+.telephone_logo{
+    display: none;
+  }
+.navbar-brand{
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 650px)
 {
-  #section1{
-    height: 700px;
-  }
-  #section2{
-    height: 880px;
-  }
-  
-
   .text_footer{
     font-size: 10px;
   }
@@ -305,15 +312,25 @@ footer{
     padding: 10px;
   }
 
+  .navbar-brand{
+    font-size: 18px;
+    padding-left: 0px;
+  }
+   
 }
 
-@media screen and (max-width: 350px){
-  #section1{
-    height: 800px;
+@media screen and (max-width: 440px){
+ 
+  .boutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 45px;
   }
 
-  #section2{
-    height: 900px;
+@media screen and (max-width: 390px){
+  .section1{
+    height: 650px;
   }
   .text1{
     font-size: 15px;
@@ -321,17 +338,13 @@ footer{
   .btn-lg{
     padding: 8px;
   }
+  .navbar-brand{
+    font-size: 16px;
+  }
 }
 
 
 @media screen and (max-width: 300px){
-  #section1{
-    height: 900px;
-  }
-
-  #section2{
-    height: 1000px;
-  }
 
   .btn-lg{
     padding: 7px;
@@ -339,13 +352,6 @@ footer{
 }
 
 @media screen and (max-width: 280px){
-  #section1{
-    height: 1000px;
-  }
-
-  #section2{
-    height: 1100px;
-  }
 
   .btn-lg{
     padding: 5px;

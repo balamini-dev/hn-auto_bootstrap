@@ -11,26 +11,39 @@
   <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
 </head>
 <body>
+<div class="barre_navigation">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.php"> <img src="icon.png" alt="logo hn auto" id="image_logo"></a>
+        <a class="navbar-brand" href="#">HN AUTO & Services</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+            <span class="telephone_logo"><li><a href="tel:0700000092" class="navbar-phone" style="padding: 9px;"> <img src="phone.png" alt="logo phone" >07 00 00 00 92</a></li></span>
+        </ul>
+      </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="index.php"> <img src="icon.png" alt="logo hn auto"></a>
-      <a class="navbar-brand" href="index.php">HN AUTO & Services</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="tel:0700000092" class="navbar-phone" style="padding: 9px;"> <img src="phone.png" alt="logo phone">07 00 00 00 92</a></li>
-          
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-       <li class="active"><a href="#">Accueil</a></li>
-       <li><a href="#">Nos véhicules</a>
-       <li><a href="#">À propos de nous</a></li>
-       <li><a href="#">Contact</a></li>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li class="active"><a href="#">Accueil</a></li>
+         <li><a href="#">Nos véhicules</a></li>
+         <li><a href="#">À propos de nous</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
   
 <div class="section1">
   <div class="text1"><p class="sous_text1">HN AUTO, véhicules d'occassion à bas prix</p></div>
@@ -64,7 +77,7 @@
 
 <div><!-- SECTION 3 --></div> 
 
-<div id="section4"><h2 class="titre_section4">CONTACT</h2>
+<div class="section4"><h2 class="titre_section4">CONTACT</h2>
   <div class="sous_section4">
     <div class="conteneur_form1"> 
       <form class ="formulaire" method="post" action=".php">
